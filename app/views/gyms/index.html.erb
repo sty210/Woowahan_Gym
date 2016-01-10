@@ -1,0 +1,22 @@
+<h1>Listing gyms</h1>
+<%= link_to 'New gym', new_gym_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>gym_nm</th>
+    <th>gym_tel</th>
+    <th>gym_adr</th>
+    <th>rgn_cd</th>
+  </tr>
+ 
+  <% @gyms.each do |gym| %>
+    <tr>
+      <td><%= gym.id %></td>
+      <td><%= gym.gym_nm %></td>
+      <td><%= gym.gym_tel %></td>
+      <td><%= gym.gym_adr %></td>
+      <td><%= gym.rgn_cd %></td>
+    </tr>
+  <% end %>
+</table>
+

@@ -1,0 +1,27 @@
+<h1>Listing users</h1>
+<%= link_to 'New user', new_user_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>user_id</th>
+    <th>user_pw</th>
+    <th>user_nm</th>
+    <th>user_tel</th>
+    <th>user_rgt_day</th>
+    <th>rsd_rgn_cd</th>
+    <th>mileage</th>
+  </tr>
+ 
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.id %></td>
+      <td><%= user.user_id %></td>
+      <td><%= user.user_pw %></td>
+      <td><%= user.user_nm %></td>
+      <td><%= user.user_tel %></td>
+      <td><%= user.user_rgt_day %></td>
+      <td><%= user.rsd_rgn_cd %></td>
+      <td><%= user.mileage %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,18 @@
+<h1>Listing gymusers</h1>
+<%= link_to 'New gymuser', new_gymuser_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>gym_no</th>
+    <th>user_no</th>
+  </tr>
+ 
+  <% @gymusers.each do |gymuser| %>
+    <tr>
+      <td><%= gymuser.id %></td>
+      <td><%= gymuser.gym_no %></td>
+      <td><%= gymuser.user_no %></td>
+    </tr>
+  <% end %>
+</table>
+

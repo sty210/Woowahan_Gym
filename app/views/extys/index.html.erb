@@ -1,0 +1,17 @@
+<h1>Listing exties</h1>
+<%= link_to 'New exty', new_exty_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>ex_det_cd</th>
+    <th>ty_det_cd</th>
+  </tr>
+ 
+  <% @exties.each do |exty| %>
+    <tr>
+      <td><%= exty.id %></td>
+      <td><%= exty.ex_det_cd %></td>
+      <td><%= exty.ty_det_cd %></td>
+    </tr>
+  <% end %>
+</table>

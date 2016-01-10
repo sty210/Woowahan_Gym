@@ -1,0 +1,29 @@
+<h1>New gym</h1>
+
+<%= form_for :gym, url: gyms_path do |f| %>
+  <p>
+    <%= f.label :gym_nm %>
+    <%= f.text_field :gym_nm, :placeholder=>"input gym nm" %>
+  </p>
+
+  <p>
+    <%= f.label :gym_tel %>
+    <%= f.text_field :gym_tel %>
+  </p>
+
+  <p>
+    <%= f.label :gym_adr %>
+    <%= f.text_field :gym_adr %>
+  </p>
+
+  <p>
+    <%= f.label :rgn_cd %>
+    <%= f.text_field :rgn_cd %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', gyms_path %>

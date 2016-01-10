@@ -1,0 +1,18 @@
+<h1>Listing gymadms</h1>
+<%= link_to 'New gymadm', new_gymadm_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>gym_no</th>
+    <th>adm_no</th>
+  </tr>
+ 
+  <% @gymadm.each do |ga| %>
+    <tr>
+      <td><%= ga.id %></td>
+      <td><%= ga.gym_no %></td>
+      <td><%= ga.adm_no %></td>
+    </tr>
+  <% end %>
+</table>
+

@@ -1,0 +1,26 @@
+<h1>listing reviewss</h1>
+<%= link_to 'New review', new_review_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>gym_no</th>
+    <th>rv_wr_id</th>
+    <th>rv_wr_tm</th>
+    <th>rv_content</th>
+    <th>rv_img</th>
+    <th>rv_point</th>
+  </tr>
+ 
+  <% @reviews.each do |rv| %>
+    <tr>
+      <td><%= rv.id %></td>
+      <td><%= rv.gym_no %></td>
+      <td><%= rv.rv_wr_id %></td>
+      <td><%= rv.rv_wr_tm %></td>
+      <td><%= rv.rv_content %></td>
+      <td><%= rv.rv_img %></td>
+      <td><%= rv.rv_point %></td>
+    </tr>
+  <% end %>
+</table>
+

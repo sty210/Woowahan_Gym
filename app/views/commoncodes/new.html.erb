@@ -1,0 +1,22 @@
+<h1>New commoncd</h1>
+
+<%= form_for :commoncd, url: commoncds_path do |f| %>
+  <p>
+    <%= f.label :main_cd %>
+    <%= f.text_field :main_cd, :placeholder=>"input main_cd" %>
+  </p>
+
+  <p>
+    <%= f.label :det_cd %>
+    <%= f.text_field :det_cd %>
+  </p>
+
+  <p>
+    <%= f.label :cd_nm %>
+    <%= f.text_field :cd_nm %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

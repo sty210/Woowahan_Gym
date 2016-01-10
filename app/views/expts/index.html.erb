@@ -1,0 +1,17 @@
+<h1>Listing expts</h1>
+<%= link_to 'New expt', new_expt_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>ex_det_cd</th>
+    <th>pt_det_cd</th>
+  </tr>
+ 
+  <% @expts.each do |expt| %>
+    <tr>
+      <td><%= expt.id %></td>
+      <td><%= expt.ex_det_cd %></td>
+      <td><%= expt.pt_det_cd %></td>
+    </tr>
+  <% end %>
+</table>

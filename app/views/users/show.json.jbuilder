@@ -1,0 +1,9 @@
+json.id @user.id
+json.user_id @user.user_id
+json.user_pw @user.user_pw
+json.user_nm @user.user_nm
+json.user_tel @user.user_tel
+json.user_rgt_day @user.user_rgt_day
+json.rsd_rgn_cd @user.rsd_rgn_cd
+json.mileage @user.mileage
+json.created_at @user.created_at

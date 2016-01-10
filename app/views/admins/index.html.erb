@@ -1,0 +1,21 @@
+<h1>Listing admins</h1>
+<%= link_to 'New admin', new_admin_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>adm_id</th>
+    <th>adm_pw</th>
+    <th>adm_nm</th>
+    <th>adm_tel</th>
+  </tr>
+ 
+  <% @admins.each do |adm| %>
+    <tr>
+      <td><%= adm.id %></td>
+      <td><%= adm.adm_id %></td>
+      <td><%= adm.adm_pw %></td>
+      <td><%= adm.adm_nm %></td>
+      <td><%= adm.adm_tel %></td>
+    </tr>
+  <% end %>
+</table>

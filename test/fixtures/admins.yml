@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  adm_id: MyString
+  adm_pw: MyString
+  adm_nm: MyString
+  adm_tel: MyString
+
+two:
+  adm_id: MyString
+  adm_pw: MyString
+  adm_nm: MyString
+  adm_tel: MyString

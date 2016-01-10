@@ -1,0 +1,17 @@
+<h1>Listing exeqs</h1>
+<%= link_to 'New exeq', new_exeq_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>ex_det_cd</th>
+    <th>eq_det_cd</th>
+  </tr>
+ 
+  <% @exeqs.each do |exeq| %>
+    <tr>
+      <td><%= exeq.id %></td>
+      <td><%= exeq.ex_det_cd %></td>
+      <td><%= exeq.eq_det_cd %></td>
+    </tr>
+  <% end %>
+</table>

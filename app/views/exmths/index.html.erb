@@ -1,0 +1,19 @@
+<h1>Listing exmths</h1>
+<%= link_to 'New exmth', new_exmth_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>ex_det_cd</th>
+    <th>ex_mth_img</th>
+    <th>ex_mth_ep</th>
+  </tr>
+ 
+  <% @exmths.each do |exmth| %>
+    <tr>
+      <td><%= exmth.id %></td>
+      <td><%= exmth.ex_det_cd %></td>
+      <td><%= exmth.ex_mth_img %></td>
+      <td><%= exmth.ex_mth_ep %></td>
+    </tr>
+  <% end %>
+</table>

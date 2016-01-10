@@ -1,0 +1,19 @@
+<h1>Listing users</h1>
+<%= link_to 'New commoncd', new_commoncd_path %> 
+<table>
+  <tr>
+    <th>id</th>
+    <th>main_cd</th>
+    <th>det_cd</th>
+    <th>cd_nm</th>
+  </tr>
+ 
+  <% @commoncds.each do |commoncd| %>
+    <tr>
+      <td><%= commoncd.id %></td>
+      <td><%= commoncd.main_cd %></td>
+      <td><%= commoncd.det_cd %></td>
+      <td><%= commoncd.cd_nm %></td>
+    </tr>
+  <% end %>
+</table>

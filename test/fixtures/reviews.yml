@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gym_no: 1
+  rv_wr_id: MyString
+  rv_wr_tm: 2016-01-10 15:32:29
+  rv_content: MyText
+  rv_img: MyString
+  rv_point: 1.5
+
+two:
+  gym_no: 1
+  rv_wr_id: MyString
+  rv_wr_tm: 2016-01-10 15:32:29
+  rv_content: MyText
+  rv_img: MyString
+  rv_point: 1.5

@@ -1,0 +1,20 @@
+<h1>New exty</h1>
+
+<%= form_for :exty, url: extys_path do |f| %>
+  <p>
+    <%= f.label :ex_det_cd %>
+    <%= f.text_field :ex_det_cd, :placeholder=>"input ex_det_cd" %>
+  </p>
+
+  <p>
+    <%= f.label :ty_det_cd %>
+    <%= f.text_field :ty_det_cd %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', extys_path %>
+

@@ -1,0 +1,40 @@
+<h1>New review</h1>
+
+<%= form_for :review, url: reviews_path do |f| %>
+  <p>
+    <%= f.label :gym_no %>
+    <%= f.text_field :gym_no, :placeholder=>"gym no" %>
+  </p>
+
+  <p>
+    <%= f.label :rv_wr_id %>
+    <%= f.text_field :rv_wr_id %>
+  </p>
+
+  <p>
+    <%= f.label :rv_wr_tm %>
+    <%= f.text_field :rv_wr_tm %>
+  </p>
+
+  <p>
+    <%= f.label :rv_content %>
+    <%= f.text_field :rv_content %>
+  </p>
+
+  <p>
+    <%= f.label :rv_img %>
+    <%= f.text_field :rv_img %>
+  </p>
+
+  <p>
+    <%= f.label :rv_point %>
+    <%= f.text_field :rv_point %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', reviews_path %>
+

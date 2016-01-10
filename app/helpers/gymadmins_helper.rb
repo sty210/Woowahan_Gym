@@ -1,0 +1,2 @@
+module GymadminsHelper
+end
