@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ex_det_cd: 1
+  ex_mth_img: MyString
+  ex_mth_ep: MyText
+
+two:
+  ex_det_cd: 1
+  ex_mth_img: MyString
+  ex_mth_ep: MyText

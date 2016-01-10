@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_no: 
+  user_id: MyString
+  user_pw: MyString
+  user_nm: MyString
+  user_tel: MyString
+  user_rgt_day: 2016-01-10
+  rsd_rgn_cd: 9.99
+  mileage: 9.99
+
+two:
+  user_no: 
+  user_id: MyString
+  user_pw: MyString
+  user_nm: MyString
+  user_tel: MyString
+  user_rgt_day: 2016-01-10
+  rsd_rgn_cd: 9.99
+  mileage: 9.99
