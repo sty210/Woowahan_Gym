@@ -1,0 +1,2 @@
+class GymusersController < ApplicationController
+end

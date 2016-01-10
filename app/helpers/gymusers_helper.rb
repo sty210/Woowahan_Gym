@@ -1,0 +1,2 @@
+module GymusersHelper
+end

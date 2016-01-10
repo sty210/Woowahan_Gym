@@ -1,0 +1,2 @@
+class ExptsController < ApplicationController
+end

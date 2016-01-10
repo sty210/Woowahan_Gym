@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  main_cd: MyString
+  det_cd: 1
+  cd_nm: MyString
+
+two:
+  main_cd: MyString
+  det_cd: 1
+  cd_nm: MyString
