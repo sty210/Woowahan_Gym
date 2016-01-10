@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160110064153) do
+ActiveRecord::Schema.define(version: 20160110153544) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "adm_id"
-    t.string   "adm_pw_string"
+    t.string   "adm_pw"
     t.string   "adm_nm"
     t.string   "adm_tel"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "commoncds", force: :cascade do |t|
@@ -78,6 +78,13 @@ ActiveRecord::Schema.define(version: 20160110064153) do
     t.string   "gym_tel"
     t.string   "gym_adr"
     t.integer  "rgn_cd"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "gymusers", force: :cascade do |t|
+    t.integer  "gym_no"
+    t.integer  "user_no"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

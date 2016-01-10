@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  user_no: 
   user_id: MyString
   user_pw: MyString
   user_nm: MyString
@@ -11,7 +10,6 @@ one:
   mileage: 9.99
 
 two:
-  user_no: 
   user_id: MyString
   user_pw: MyString
   user_nm: MyString
