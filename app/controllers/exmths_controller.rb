@@ -1,4 +1,5 @@
 class ExmthsController < ApplicationController
+<<<<<<< HEAD
   respond_to :json
 
   def new
@@ -28,4 +29,6 @@ class ExmthsController < ApplicationController
   def exmth_params
     params.require(:exmth).permit(:ex_det_cd, :ex_mth_img, :ex_mth_ep)
   end
+=======
+>>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
 end

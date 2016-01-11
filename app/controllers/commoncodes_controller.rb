@@ -1,4 +1,5 @@
 class CommoncodesController < ApplicationController
+<<<<<<< HEAD
   respond_to :json
 
   def new
@@ -28,4 +29,6 @@ class CommoncodesController < ApplicationController
   def commoncd_params
     params.require(:commoncd).permit(:main_cd, :det_cd, :cd_nm)
   end
+=======
+>>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
 end
