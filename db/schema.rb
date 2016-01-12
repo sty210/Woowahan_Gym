@@ -59,13 +59,6 @@ ActiveRecord::Schema.define(version: 20160110152721) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "gym_users", force: :cascade do |t|
-    t.integer  "gym_no"
-    t.integer  "user_no"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "gymadms", force: :cascade do |t|
     t.integer  "gym_no"
     t.integer  "adm_no"
