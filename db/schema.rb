@@ -59,8 +59,6 @@ ActiveRecord::Schema.define(version: 20160110152721) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-=======
   create_table "gym_users", force: :cascade do |t|
     t.integer  "gym_no"
     t.integer  "user_no"
@@ -68,7 +66,6 @@ ActiveRecord::Schema.define(version: 20160110152721) do
     t.datetime "updated_at", null: false
   end
 
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
   create_table "gymadms", force: :cascade do |t|
     t.integer  "gym_no"
     t.integer  "adm_no"
@@ -92,10 +89,6 @@ ActiveRecord::Schema.define(version: 20160110152721) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-  #create_table "gym_users", force ~~ 이 부분 사라짐!
-=======
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
   create_table "reviews", force: :cascade do |t|
     t.integer  "gym_no"
     t.string   "rv_wr_id"

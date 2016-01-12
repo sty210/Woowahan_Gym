@@ -1,9 +1,6 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
   respond_to :json
 
-=======
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
   def new
   end
 
@@ -20,10 +17,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-<<<<<<< HEAD
     respond_with(@users)
-=======
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
   end
 
   def show

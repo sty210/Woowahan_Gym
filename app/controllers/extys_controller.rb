@@ -1,5 +1,4 @@
 class ExtysController < ApplicationController
-<<<<<<< HEAD
   respond_to :json
 
   def new
@@ -29,6 +28,4 @@ class ExtysController < ApplicationController
   def exty_params
     params.require(:exty).permit(:ex_det_cd, :ty_det_cd)
   end
-=======
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
 end

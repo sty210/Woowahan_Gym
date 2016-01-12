@@ -1,5 +1,4 @@
 class GymusersController < ApplicationController
-<<<<<<< HEAD
   respond_to :json
 
   def new
@@ -29,6 +28,4 @@ class GymusersController < ApplicationController
   def gymuser_params
     params.require(:gymuser).permit(:gym_no, :user_no)
   end
-=======
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
 end

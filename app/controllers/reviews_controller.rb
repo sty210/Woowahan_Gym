@@ -1,5 +1,4 @@
 class ReviewsController < ApplicationController
-<<<<<<< HEAD
   respond_to :json
 
   def new
@@ -30,6 +29,4 @@ class ReviewsController < ApplicationController
     params.require(:review).permit(:gym_no, :rv_wr_id, :rv_wr_tm, :rv_content,
                                    :rv_img, :rv_point)
   end
-=======
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
 end
