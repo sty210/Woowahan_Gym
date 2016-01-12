@@ -1,4 +1,4 @@
-<h1>listing reviewss</h1>
+<h1>listing reviews</h1>
 <%= link_to 'New review', new_review_path %> 
 <table>
   <tr>
@@ -11,15 +11,15 @@
     <th>rv_point</th>
   </tr>
  
-  <% @reviews.each do |rv| %>
+  <% @reviews.each do |review| %>
     <tr>
-      <td><%= rv.id %></td>
-      <td><%= rv.gym_no %></td>
-      <td><%= rv.rv_wr_id %></td>
-      <td><%= rv.rv_wr_tm %></td>
-      <td><%= rv.rv_content %></td>
-      <td><%= rv.rv_img %></td>
-      <td><%= rv.rv_point %></td>
+      <td><%= review.id %></td>
+      <td><%= review.gym_no %></td>
+      <td><%= review.rv_wr_id %></td>
+      <td><%= review.rv_wr_tm %></td>
+      <td><%= review.rv_content %></td>
+      <td><%= review.rv_img %></td>
+      <td><%= review.rv_point %></td>
     </tr>
   <% end %>
 </table>

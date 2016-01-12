@@ -1,5 +1,4 @@
 class ExptsController < ApplicationController
-<<<<<<< HEAD
   respond_to :json
 
   def new
@@ -29,6 +28,4 @@ class ExptsController < ApplicationController
   def expt_params
     params.require(:expt).permit(:ex_det_cd, :pt_det_cd)
   end
-=======
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
 end

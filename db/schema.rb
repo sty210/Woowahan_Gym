@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160110152721) do
+ActiveRecord::Schema.define(version: 20160112080319) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "adm_id"
@@ -59,16 +59,6 @@ ActiveRecord::Schema.define(version: 20160110152721) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-=======
-  create_table "gym_users", force: :cascade do |t|
-    t.integer  "gym_no"
-    t.integer  "user_no"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
   create_table "gymadms", force: :cascade do |t|
     t.integer  "gym_no"
     t.integer  "adm_no"
@@ -92,10 +82,6 @@ ActiveRecord::Schema.define(version: 20160110152721) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-  #create_table "gym_users", force ~~ 이 부분 사라짐!
-=======
->>>>>>> d7e83b8befe27844801ac049d523dd392e8bd944
   create_table "reviews", force: :cascade do |t|
     t.integer  "gym_no"
     t.string   "rv_wr_id"
