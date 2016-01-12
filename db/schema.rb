@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160110153544) do
+ActiveRecord::Schema.define(version: 20160112080319) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "adm_id"
@@ -55,13 +55,6 @@ ActiveRecord::Schema.define(version: 20160110153544) do
   create_table "exties", force: :cascade do |t|
     t.integer  "ex_det_cd"
     t.integer  "ty_det_cd"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "gym_users", force: :cascade do |t|
-    t.integer  "gym_no"
-    t.integer  "user_no"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
