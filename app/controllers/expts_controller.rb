@@ -20,7 +20,9 @@ class ExptsController < ApplicationController
   end
 
   def show
-    @expt = Expt.find(params[:id])
+    # @expt = Expt.find(params[:id])
+    @expts = Expt.where(pt_det_cd: params[:id])
+    @commoncds = Commoncd.where(main_cd: 'AA0003')
   end
 
   private

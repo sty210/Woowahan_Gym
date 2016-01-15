@@ -15,12 +15,24 @@ class CommoncdsController < ApplicationController
   end
 
   def index
-    @commoncds = Commoncd.all
-    respond_with(@commoncds)
+    if params[:category] == 'exty'
+      @excds = Exty.where(ty_det_cd: params[:id])
+    elsif params[:category] == 'expt'
+      @excds = Expt.where(pt_det_cd: params[:id])
+    end
+    # @commoncds = Commoncd.all
+    # respond_with(@commoncds)
+    @exmths = Exmth.all
   end
 
   def show
-    @commoncd = Commoncd.find(params[:id])
+    # @commoncd = Commoncd.find(params[:id])
+    # if params[:category] == "exty"
+    #  @excds = Exty.where(ty_det_cd: params[:id])
+    # else
+    #  @excds = Expt.where(pt_det_cd: params[:id])
+    # end
+    # @exths = Exmth.all
   end
 
   private

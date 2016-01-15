@@ -1,6 +1,8 @@
 json.id @gym.id
-json.gym_nm @gym.gym_nm
-json.gym_tel @gym.gym_tel
-json.gym_adr @gym.gym_adr
-json.rgn_cd @gym.rgn_cd
-json.created_at @gym.created_at
+json.name @gym.gym_nm
+json.phone_number @gym.gym_tel
+json.address @gym.gym_adr
+json.reviews @gym.reviews do |review|
+  json.id review.id
+  json.content review.content
+end
