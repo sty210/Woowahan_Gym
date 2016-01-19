@@ -20,7 +20,9 @@ class ExtysController < ApplicationController
   end
 
   def show
-    @exty = Exty.find(params[:id])
+    # @exty = Exty.find(params[:id])
+    @extys = Exty.where(ty_det_cd: params[:id])
+    @commoncds = Commoncd.where(main_cd: 'AA0003')
   end
 
   private

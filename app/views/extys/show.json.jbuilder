@@ -1,4 +1,3 @@
-json.id @exty.id
-json.ex_det_cd @exty.ex_det_cd
-json.ty_det_cd @exty.ty_det_cd
-json.created_at @exty.created_at
+json.array! @extys do |exty|
+  json.array! @commoncds.where(det_cd: exty.ex_det_cd), :cd_nm
+end
