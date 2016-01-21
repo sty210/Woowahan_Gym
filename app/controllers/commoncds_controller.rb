@@ -17,8 +17,10 @@ class CommoncdsController < ApplicationController
   def index
     if params[:category] == 'exty'
       @excds = Exty.where(ty_det_cd: params[:id])
+      @commoncds = Commoncd.where(main_cd: 'AA0003')
     elsif params[:category] == 'expt'
       @excds = Expt.where(pt_det_cd: params[:id])
+      @commoncds = Commoncd.where(main_cd: 'AA0003')
     end
     # @commoncds = Commoncd.all
     # respond_with(@commoncds)
