@@ -20,8 +20,7 @@ class CommoncdsController < ApplicationController
     elsif params[:category] == 'expt'
       @excds = Expt.where(pt_det_cd: params[:id])
     end
-    # @commoncds = Commoncd.all
-    # respond_with(@commoncds)
+    @commoncds = Commoncd.where(main_cd: 'AA0003')
     @exmths = Exmth.all
   end
 
